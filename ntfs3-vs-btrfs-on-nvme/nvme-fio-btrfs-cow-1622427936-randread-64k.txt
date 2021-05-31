@@ -1,0 +1,17 @@
+fiotest: (g=0): rw=randread, bs=(R) 64.0KiB-64.0KiB, (W) 64.0KiB-64.0KiB, (T) 64.0KiB-64.0KiB, ioengine=libaio, iodepth=64
+fio-3.26
+Starting 1 process
+
+fiotest: (groupid=0, jobs=1): err= 0: pid=33962: Mon May 31 09:26:07 2021
+  read: IOPS=8548, BW=534MiB/s (560MB/s)(16.0GiB/30667msec)
+   bw (  KiB/s): min=503168, max=559616, per=100.00%, avg=547063.61, stdev=9526.07, samples=61
+   iops        : min= 7862, max= 8744, avg=8547.87, stdev=148.84, samples=61
+  cpu          : usr=2.03%, sys=53.37%, ctx=105955, majf=0, minf=1029
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=262144,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=534MiB/s (560MB/s), 534MiB/s-534MiB/s (560MB/s-560MB/s), io=16.0GiB (17.2GB), run=30667-30667msec

@@ -1,0 +1,21 @@
+fiotest: (g=0): rw=randrw, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.26
+Starting 1 process
+
+fiotest: (groupid=0, jobs=1): err= 0: pid=32742: Mon May 31 09:16:06 2021
+  read: IOPS=60.4k, BW=236MiB/s (247MB/s)(12.0GiB/52095msec)
+   bw (  KiB/s): min=171856, max=278408, per=100.00%, avg=241589.52, stdev=16216.95, samples=104
+   iops        : min=42964, max=69602, avg=60397.37, stdev=4054.22, samples=104
+  write: IOPS=20.1k, BW=78.6MiB/s (82.5MB/s)(4097MiB/52095msec); 0 zone resets
+   bw (  KiB/s): min=58216, max=94256, per=100.00%, avg=80559.08, stdev=5387.31, samples=104
+   iops        : min=14554, max=23564, avg=20139.77, stdev=1346.82, samples=104
+  cpu          : usr=12.85%, sys=49.07%, ctx=1228843, majf=0, minf=7
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=3145447,1048857,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=236MiB/s (247MB/s), 236MiB/s-236MiB/s (247MB/s-247MB/s), io=12.0GiB (12.9GB), run=52095-52095msec
+  WRITE: bw=78.6MiB/s (82.5MB/s), 78.6MiB/s-78.6MiB/s (82.5MB/s-82.5MB/s), io=4097MiB (4296MB), run=52095-52095msec
